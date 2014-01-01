@@ -67,7 +67,7 @@
 	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.bundles
 [submodule "rt.equinox.framework"]
 	path = rt.equinox.framework
-	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.framework
+	url = ../rt.equinox.framework
 [submodule "rt.equinox.p2"]
 	path = rt.equinox.p2
 	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.p2
