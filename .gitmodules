@@ -58,7 +58,7 @@
 	url = git://git.eclipse.org/gitroot/platform/eclipse.platform.ua
 [submodule "eclipse.platform.ui"]
 	path = eclipse.platform.ui
-	url = git://git.eclipse.org/gitroot/platform/eclipse.platform.ui
+	url = ../eclipse.platform.ui
 [submodule "rt.equinox.binaries"]
 	path = rt.equinox.binaries
 	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.binaries.git
