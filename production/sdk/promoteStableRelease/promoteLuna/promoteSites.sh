@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-DROP_ID=I20130918-2000
+export DROP_ID=I20140123-1600
 
-DL_LABEL=4.4M2
-DL_LABEL_EQ=LunaM2
+export DL_LABEL=4.4M5
+export DL_LABEL_EQ=LunaM5
 
 # for I builds, stable and RCs to in milestones
-REPO_SITE_SEGMENT=4.4milestones
+export REPO_SITE_SEGMENT=4.4milestones
 #REPO_SITE_SEGMENT=4.4
 
-HIDE_SITE=true
+export HIDE_SITE=true
 #HIDE_SITE=false
 
 export CL_SITE=${PWD}
@@ -19,6 +19,16 @@ echo "CL_SITE: ${CL_SITE}"
 export DL_TYPE=S
 #export DL_TYPE=R
 #export DL_TYPE=M
+
+# variables used on tagging aggregator for milestones (and RCs?) 
+# Could probably compute this tag ... but for now easier to type it in each time. 
+export NEW_TAG=S4_4_0_M5
+# For now, we'll just use handy Equinox label for tag annotation, but could elaborate in future
+export NEW_ANNOTATION="${DL_LABEL_EQ}"
+# later combined with BUILD_ROOT, so we get the correct clone
+# should very seldom need to change, if ever. 
+export AGGR_LOCATION="gitCache/eclipse.platform.releng.aggregator"
+
 
 # Used in naming repo, etc
 export TRAIN_NAME=Luna
@@ -82,6 +92,17 @@ rccode=$?
 if [[ $rccode != 0 ]]
 then
     printf "\n\n\t%s\n\n" "ERROR: promoteRepo.sh failed."
+    exit $rccode
+fi
+
+# If all goes well, we create the "tag script", but don't actually run it
+# until we make the site visible, after doing sanity checking, etc.    
+# Note, this script relies on a number of exported variables
+${PROMOTE_IMPL}/tagPromotedBuilds.sh
+rccode=$?
+if [[ $rccode != 0 ]]
+then
+    printf "\n\n\t%s\n\n" "ERROR: tagPromotedBuilds.sh failed."
     exit $rccode
 fi
 

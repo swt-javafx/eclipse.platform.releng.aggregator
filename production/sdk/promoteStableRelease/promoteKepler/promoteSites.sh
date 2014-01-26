@@ -1,24 +1,37 @@
 #!/usr/bin/env bash
 
-DROP_ID=M20130911-1000
+export DROP_ID=M20140117-0910
 
-DL_LABEL=4.3.1
-DL_LABEL_EQ=KeplerSR1
+#DL_LABEL=4.3.2
+export DL_LABEL=4.3.2RC1
+#DL_LABEL_EQ=KeplerSR2
+export DL_LABEL_EQ=KeplerSR2RC1
 
 # in maintenance, even RCs go in "M-builds"
-#REPO_SITE_SEGMENT=4.3-M-builds
-REPO_SITE_SEGMENT=4.3
+export REPO_SITE_SEGMENT=4.3-M-builds
+#REPO_SITE_SEGMENT=4.3
 
-HIDE_SITE=true
-#HIDE_SITE=false
+export HIDE_SITE=true
+# almost always use 'true', to allow some sanity checking, and even mirroring
+#export HIDE_SITE=false
 
 export CL_SITE=${PWD}
 echo "CL_SITE: ${CL_SITE}"
 
 # These are what precedes main drop directory name
 #export DL_TYPE=S
-export DL_TYPE=R
-#export DL_TYPE=M
+#export DL_TYPE=R
+export DL_TYPE=M
+
+# variables used on tagging aggregator for milestones (and RCs?) 
+# Could probably compute this tag ... but for now easier to type it in each time. 
+export NEW_TAG=M4_3_2_RC1
+# For now, we'll just use handy Equinox label for tag annotation, but could elaborate in future
+export NEW_ANNOTATION="${DL_LABEL_EQ}"
+# later combined with BUILD_ROOT, so we get the correct clone
+# should very seldom need to change, if ever. 
+export AGGR_LOCATION="gitCache/eclipse.platform.releng.aggregator"
+
 
 # Used in naming repo, etc
 export TRAIN_NAME=Kepler
@@ -82,6 +95,18 @@ rccode=$?
 if [[ $rccode != 0 ]]
 then
     printf "\n\n\t%s\n\n" "ERROR: promoteRepo.sh failed."
+    exit $rccode
+fi
+
+
+# If all goes well, we create the "tag script", but don't actually run it
+# until we make the site visible, after doing sanity checking, etc.    
+# Note, this script relies on a number of exported variables
+${PROMOTE_IMPL}/tagPromotedBuilds.sh
+rccode=$?
+if [[ $rccode != 0 ]]
+then
+    printf "\n\n\t%s\n\n" "ERROR: tagPromotedBuilds.sh failed."
     exit $rccode
 fi
 

@@ -10,8 +10,8 @@
 <unit id="com.jcraft.jsch.source" version="0.1.50.v201310081430" />
 <unit id="com.sun.el" version="2.2.0.v201303151357" />
 <unit id="com.sun.el.source" version="2.2.0.v201303151357" />
-<unit id="javax.annotation" version="1.1.0.v201209060031" />
-<unit id="javax.annotation.source" version="1.1.0.v201209060031" />
+<unit id="javax.annotation" version="1.2.0.v201401042248" />
+<unit id="javax.annotation.source" version="1.2.0.v201401042248" />
 <unit id="javax.el" version="2.2.0.v201303151357" />
 <unit id="javax.el.source" version="2.2.0.v201303151357" />
 <unit id="javax.inject" version="1.0.0.v20091030" />
@@ -36,10 +36,10 @@
 <unit id="org.apache.felix.gogo.runtime.source" version="0.10.0.v201209301036" />
 <unit id="org.apache.felix.gogo.shell" version="0.10.0.v201212101605" />
 <unit id="org.apache.felix.gogo.shell.source" version="0.10.0.v201212101605" />
-<unit id="org.apache.httpcomponents.httpclient" version="4.2.5.v201305222326" />
-<unit id="org.apache.httpcomponents.httpclient.source" version="4.2.5.v201305222326" />
-<unit id="org.apache.httpcomponents.httpcore" version="4.2.4.v201310231540" />
-<unit id="org.apache.httpcomponents.httpcore.source" version="4.2.4.v201310231540" />
+<unit id="org.apache.httpcomponents.httpclient" version="4.2.6.v201311072007" />
+<unit id="org.apache.httpcomponents.httpclient.source" version="4.2.6.v201311072007" />
+<unit id="org.apache.httpcomponents.httpcore" version="4.2.5.v201311072007" />
+<unit id="org.apache.httpcomponents.httpcore.source" version="4.2.5.v201311072007" />
 <unit id="org.apache.jasper.glassfish" version="2.2.2.v201205150955" />
 <unit id="org.apache.jasper.glassfish.source" version="2.2.2.v201205150955" />
 <unit id="org.apache.lucene.analysis" version="3.5.0.v20120725-1805" />
@@ -84,59 +84,59 @@
 <unit id="org.apache.lucene.queries" version="3.5.0.v20120725-1805" />
 <unit id="org.apache.lucene.misc" version="3.5.0.v20120725-1805" />
 
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20131206110810/repository/"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20140116105218/repository/"/>
 
 </location>
 
 <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
 
-<unit id="org.eclipse.emf.common.feature.group" version="2.10.0.v20131209-0519" />
-<unit id="org.eclipse.emf.common.source.feature.group" version="2.10.0.v20131209-0519" />
-<unit id="org.eclipse.emf.ecore.feature.group" version="2.10.0.v20131209-0519" />
-<unit id="org.eclipse.emf.ecore.source.feature.group" version="2.10.0.v20131209-0519" />
+<unit id="org.eclipse.emf.common.feature.group" version="2.10.0.v20140117-0813" />
+<unit id="org.eclipse.emf.common.source.feature.group" version="2.10.0.v20140117-0813" />
+<unit id="org.eclipse.emf.ecore.feature.group" version="2.10.0.v20140117-0813" />
+<unit id="org.eclipse.emf.ecore.source.feature.group" version="2.10.0.v20140117-0813" />
 
-<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones/base/S201312090519/" />
+<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones/base/S201401170813/" />
 
 </location>
 
 <location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="false" type="InstallableUnit">
-<unit id="org.eclipse.jetty.continuation" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.continuation.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.http" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.http.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.io" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.io.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.security" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.security.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.server" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.server.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.servlet" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.servlet.source" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.util" version="8.1.12.v20130726"/>
-<unit id="org.eclipse.jetty.util.source" version="8.1.12.v20130726"/>
-<repository location="http://download.eclipse.org/jetty/updates/jetty-bundles-8.x/8.1.12.v20130726/"/>
+<unit id="org.eclipse.jetty.continuation" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.continuation.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.http" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.http.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.io" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.io.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.security" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.security.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.server" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.server.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.servlet" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.servlet.source" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.util" version="8.1.14.v20131031"/>
+<unit id="org.eclipse.jetty.util.source" version="8.1.14.v20131031"/>
+<repository location="http://download.eclipse.org/jetty/updates/jetty-bundles-8.x/8.1.14.v20131031/"/>
 </location>
 
 <location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="false" type="InstallableUnit">
 
-<unit id="org.eclipse.ecf" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.filetransfer" version="5.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.filetransfer.source" version="5.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.identity" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.identity.source" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4" version="1.0.300.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.source" version="1.0.300.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" version="1.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl.source" version="1.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.source" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.ssl" version="1.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.provider.filetransfer.ssl.source" version="1.0.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.source" version="3.2.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.ssl" version="1.1.0.v20131027-1505" />
-<unit id="org.eclipse.ecf.ssl.source" version="1.1.0.v20131027-1505" />
+<unit id="org.eclipse.ecf" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.filetransfer" version="5.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.filetransfer.source" version="5.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.identity" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.identity.source" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4" version="1.0.300.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.source" version="1.0.300.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" version="1.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl.source" version="1.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.source" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.ssl" version="1.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.provider.filetransfer.ssl.source" version="1.0.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.source" version="3.2.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.ssl" version="1.1.0.v20131209-1801" />
+<unit id="org.eclipse.ecf.ssl.source" version="1.1.0.v20131209-1801" />
 
-<repository location="http://download.eclipse.org/rt/ecf/3.7.1/site.p2"/>
+<repository location="http://download.eclipse.org/rt/ecf/int3.8/3.8.0/site.p2"/>
 </location>
 
 <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
