@@ -253,6 +253,11 @@
               <ws>gtk</ws>
               <arch>ppc64</arch>
             </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>javafx</ws>
+              <arch>x86_64</arch>
+            </environment>
           </environments>
         </configuration>
       </plugin>
@@ -325,6 +330,7 @@
             <excludeResources>
               <exclude>**/package.html</exclude>
             </excludeResources>
+	    <useJDK>BREE</useJDK>
           </configuration>
         </plugin>
         <plugin>

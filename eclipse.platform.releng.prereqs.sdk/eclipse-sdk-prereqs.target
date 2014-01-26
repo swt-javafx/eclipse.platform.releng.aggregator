@@ -157,5 +157,10 @@
 <repository location="http://download.eclipse.org/egit/updates-3.1" />
 </location>
 
+<location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
+<unit id="a.jre.javafx" version="1.8.0"/>
+<repository location="http://download.eclipse.org/tools/cdt/javafx/ee/"/>
+</location>
+
 </locations>
 </target>

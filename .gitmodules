@@ -61,7 +61,7 @@
 	url = ../eclipse.platform.ui
 [submodule "rt.equinox.binaries"]
 	path = rt.equinox.binaries
-	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.binaries.git
+	url = ../rt.equinox.binaries
 [submodule "rt.equinox.bundles"]
 	path = rt.equinox.bundles
 	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.bundles
